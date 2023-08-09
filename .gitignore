@@ -1,0 +1,20 @@
+# ディレクトリ
+/node_modules
+/dist
+/.vite
+
+# 環境設定
+.env
+.env.local
+.env.*.local
+
+# エディタやIDEの設定
+.vscode/
+.idea/
+
+# OS 生成ファイル
+.DS_Store
+Thumbs.db
+
+# ログファイル
+*.log
