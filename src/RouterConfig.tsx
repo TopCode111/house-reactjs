@@ -1,12 +1,15 @@
 import { useEffect } from "react";
+import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+
 import Top from "./pages/Top";
-import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import Blogs from './pages/Blogs';
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import ScrollReveal from "scrollreveal";
 import TermsBusiness from "./pages/TermsBusiness";
 import TermsUser from "./pages/TermsUser";
+import ScrollReveal from "scrollreveal";
 
 export default function RouterConfig(): JSX.Element {
   const reveral = (
@@ -50,6 +53,7 @@ export default function RouterConfig(): JSX.Element {
       element: <Layout />,
       children: [
         { path: "/", element: <Top />, index: true },
+        { path: "/blogs", element: <Blogs />, index: true },
         { path: "/user-terms", element: <TermsUser />, index: true },
         { path: "/biz-terms", element: <TermsBusiness />, index: true },
         { path: "/privacy-policy", element: <PrivacyPolicy />, index: true },

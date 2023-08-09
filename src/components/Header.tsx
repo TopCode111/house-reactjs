@@ -34,7 +34,10 @@ const Header: React.FC = () => {
           className="mx-3 cursor-pointer"
         >
           {LP_INDEX.target.name}
-        </a>
+        </a>    
+        <Link to={"/blogs"}>
+          {LP_INDEX.blog.name}
+        </Link>
         <a
           onClick={() => scrollTo(LP_INDEX.faq.id)}
           className="mx-3 cursor-pointer"

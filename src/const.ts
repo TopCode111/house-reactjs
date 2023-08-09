@@ -15,6 +15,10 @@ export const LP_INDEX = {
     name: "FAQ",
     id: "faq",
   },
+  blog: {
+    name: "BLOG",
+    id: "blog"
+  },
   subscribe: {
     name: "まずはニュースレター登録",
     id: "subscribe",
